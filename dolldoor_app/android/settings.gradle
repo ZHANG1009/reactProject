@@ -1,0 +1,3 @@
+rootProject.name = 'dolldoor_app'
+
+include ':app'
