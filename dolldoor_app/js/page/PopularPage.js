@@ -11,22 +11,22 @@ export default class PopularPage extends Component<Props> {
   render() {
     const TabNavigator = createAppContainer(createMaterialTopTabNavigator({
       PopularTab1: {
-        screen: PopularTab1,
+        screen: PopularTab,
         navigationOptions: {
           title: 'Tab1'
         }
       },
       PopularTab2: {
-        screen: PopularTab2,
+        screen: PopularTab,
         navigationOptions: {
           title: 'Tab2'
         }
       }
     }))
     return (
-      <view style={{flex: 1, marginTop: 30}}>
+      <View style={{flex: 1, marginTop: 30}}>
         <TabNavigator/>
-      </view>
+      </View>
     );
   }
 }
