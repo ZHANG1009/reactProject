@@ -85,7 +85,7 @@ export default class HomePage extends Component<Props> {
   }
 
   render() {
-    NavigationUtil.navigation = this.props.navigation;
+    // NavigationUtil.navigation = this.props.navigation;
     const Tab = this._tabNavigator()
     return <Tab/>
   }
@@ -110,8 +110,8 @@ class TabBarComponent extends React.Component{
       }
     }
     return <BottomTabBar
-    {...this.props}
-    activeTintColor={this.theme.tintColor || this.props.activeTintColor}
+      {...this.props}
+      activeTintColor={this.theme.tintColor || this.props.activeTintColor}
     />
   }
 }
